@@ -11,18 +11,18 @@ from bokeh.models import Range1d
 import pandas
 
 #Read in CSV
-df = pandas.read_csv('Cs.csv')
-#Dataframe
-# wavelength = df['wavelength']
-# polarizability = df['polarizability']
-#Create ColumnDataSource from Data Frame - ColumnDataSource gives more features like hover,tooltips
-source= ColumnDataSource(df)
+# df = pandas.read_csv('Cs.csv')
+# #Dataframe
+# # wavelength = df['wavelength']
+# # polarizability = df['polarizability']
+# #Create ColumnDataSource from Data Frame - ColumnDataSource gives more features like hover,tooltips
+# source= ColumnDataSource(df)
 
 
-# df2=pandas.read_csv('Cs.csv')
-# source= ColumnDataSource(df2)
+df = pandas.read_csv('7p1.csv')
+source = ColumnDataSource(df)
 #creates html file
-output_file('graphcs6s.html')
+output_file('graph7p1.html')
 
 polarizability_list = source.data['polarizability'].tolist()
 
@@ -31,7 +31,6 @@ TOOLTIPS = [
     ("wavelength:", "@wavelength{1.1}"),
     ("polarizability:", "@polarizability{1.111}"),
 ]
-
 # # display a tooltip whenever the cursor is vertically in line with a glyph
 # mode='vline'
 
@@ -51,14 +50,12 @@ p= figure(
     # y = polarizability ,
     plot_width= 600,
     plot_height= 450,
-    title= 'CS 6s',
+    title= '7p1',
     # fill_color = factor_cmap(
     #     'Car',
     #     palette = Blues8,
     #     factors = polarizability_list
     # ),
-    x_range=(500, 1600),
-    y_range=(-5000, 5000),
     tooltips=TOOLTIPS,
     x_axis_label='wavelength(nm)',
     y_axis_label= 'polarizability',
@@ -84,8 +81,8 @@ p.axis.axis_line_color = None
 # figure.left.formatter.use_scientific=False
 # p.background_fill_color = "#eeeeee"
 # defining range of xaxis and yaxis
-# p.x_range=Range1d(500, 1600)
-# p.y_range=Range1d(-5000, 5000)
+p.x_range=Range1d(1100, 1800)
+p.y_range=Range1d(-5000, 5000)
 
 # p.xgrid.visible = True
 # p.xgrid.grid_line_color = "blue"
@@ -94,7 +91,7 @@ p.axis.axis_line_color = None
 # p.ygrid.visible = True
 
 #setting tickers for X axis and Y axis
-ticker = SingleIntervalTicker(interval=100, num_minor_ticks=500)
+ticker = SingleIntervalTicker(interval=100, num_minor_ticks=1100)
 xaxis = LinearAxis(ticker=ticker)
 # p.xaxis.visible = True
 xaxis.axis_label = "wavelength (nm)"
@@ -116,7 +113,8 @@ p.add_layout(yaxis, 'left')
 
 #render glyph
 # p.line( source = source, x= 'wavelength', y= 'polarizability' , legend='Cs 6s',line_width=3)
-p.scatter(source = source, x= 'wavelength', y= 'polarizability' , marker="circle", legend='Cs 6s',size=4,alpha=0.9)
+# p.scatter(source = source, x= 'wavelength', y= 'polarizability' , marker="circle", legend='Cs 6s',size=4,alpha=0.9)
+p.scatter(source = source, x= 'wavelength', y= 'polarizability' , marker="circle", legend='Cs 6s',size=4,alpha=0.9,color="green" )
 # p.circle( source = source, x= 'wavelength', y= 'polarizability' , legend='Cs 6s',color='blue')
 
 # Add Legend
@@ -129,16 +127,14 @@ x_slider = Slider(start=500, end=1600, value=500, step=.1, title="Wavelength(nm)
 y_slider = Slider(start=-5000, end=5000, value=-5000, step=.1, title="Polarizability(a.u.)" )
 
 # callback should set the value for new ranges
-callback = CustomJS(args=dict(x_range=p.x_range, y_range=p.y_range),
+callback = CustomJS(args=dict(source=source, x=x_slider, y=y_slider),
                     code="""
-    # var start = cb_obj.value
-    # var data = source.data
-    # var xRange==x.value
-    # var yRange=y.value
+    var data = source.data;
+    var xRange==x.value
+    var yRange=y.value
     # p.x_range=Range1d(xRange, 1600)
     # p.y_range=Range1d(yRange, 5000)
-    x_range.setv({"start": 1000, "end": 1600})
-    # source.change.emit();
+    emit();
 """)
 
 # in case of any change in the slide bar send the value to callback
@@ -149,7 +145,7 @@ layout = row(
     p,
     column(x_slider, y_slider),
 )
-# layout = column(x_slider, p)
+
 show(layout)
 
 # Ad tooltips
@@ -176,4 +172,3 @@ script, div = components(p)
 
 
 # https://www.youtube.com/watch?v=2TR_6VaVSOs&t=419s
-
