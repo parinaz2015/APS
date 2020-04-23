@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <base href="file:///C:/Users/13022/Desktop/website/" /> -->
+  <!-- <script type="text/javascript" src="jsfile.js"></script> -->
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.js"></script>
+  <script src="exceljs.js"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+  <title>Polarizability</title>
+  </style>
+  <style id="Cs_10895_Styles">
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    .font510895
+        {color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;}
+    .xl1510895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:general;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl1529633 /* styling result data in the center of each cloumn*/
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6310895  
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        border:0pt solid windowtext;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6410895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    -->
+    </style>
+    <style>
+    .button {
+      background-color: rgba(0,123,255, 0.6);
+      border: none;
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight:700;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      margin: 1px 1px;
+      cursor: pointer;
+      width:150;
+      border-radius: 10px;
+      box-shadow: 0 2px #999;
+    }
+    .button:hover {background-color:  rgba(0,123,255, 0.8);}
+    .button:active {
+    background-color: #355a36;
+    box-shadow: 0 10px #666;
+    transform: translateY(4px);
+    }
+    .button:focus {
+    background-color:  rgba(0,123,255, 0.2);
+    }
+    </style>
+    <script>
+        function readfile() {
+          alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+        }
+    </script>
+    <script>
+         function draw_graph(id) {
+      // to show the selected Element name on top of the page
+      var element = document.querySelector("#element");
+      element.innerHTML = id.innerHTML; // + " <I>[Uncertainties are given in parenthesis]</I>";
+      // document.getElementById("iframe").src = "Li.txt"
+      switch (id.innerHTML) {
+        case "6s":
+          document.getElementById("iframe").src = "6s.html"
+          break;
+        case "6p1/2":
+          document.getElementById("iframe").src = "6p1.html"
+          break;
+        case "6p3/2":
+          document.getElementById("iframe").src = "6p3.html"
+          break;
+        case "7p1/2":
+          document.getElementById("iframe").src = "7p1.html"
+          break;
+        case "7p3/2":
+          document.getElementById("iframe").src = "7p3.html"
+          break;
+        case "6s-6p1/2":
+          document.getElementById("iframe").src = "Cs6p1.html"
+          break;
+        case "6s-6p3/2":
+          document.getElementById("iframe").src = "Cs6p3.html"
+          break;
+        case "6s-7p1/2":
+          document.getElementById("iframe").src = "Cs7p1.html"
+          break;
+        case "6s-7p3/2":
+          document.getElementById("iframe").src = "Cs7p3.html"
+          break;
+        }
+    }
+     
+    </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+    <!-- Navbar content -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </nav>
+<br>
+
+<div style="overflow-x:auto;">
+    <div id="Cs_10895" align=center >
+        <h1 style='color:black;font-family:Calibri;font-size:18.0pt;font-weight:800;
+        font-style:normal'>Dynamic polarizabilities </h1>
+        
+        <h6 id="hint" style="text-align: Center;margin: 20px;"> <I> Hint: Click on a transition to see the polarization graph.</I></h6>
+        <br>
+
+        <div style="overflow-x:auto;">
+      <table border=0 cellpadding=5 cellspacing=5 width=150 class="noprint" style='border-collapse:collapse;table-layout:fixed;width:150pt'>
+        <!-- <h5>Single States</h5> -->
+         <col span=5 style='width:55pt'>
+          <tr height=32 style='height:24.0pt'>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn" id="state_button" onclick="draw_graph(this)" value=" 6s " onmouseout="this.innerHTML='6s'" style='width:46pt'>6s</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn" id="state_button" onclick="draw_graph(this)" value="6p1/2" onmouseout="this.innerHTML='6p1/2'">6p1/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6p3/2" onmouseout="this.innerHTML='6p3/2'">6p3/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="7p1/2" onmouseout="this.innerHTML='7p1/2'">7p1/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="7p3/2" onmouseout="this.innerHTML='7p3/2'">7p3/2</button></td>
+         </tr>
+        </tbody>
+      </table>
+      <br>
+      <table border=0 cellpadding=0 cellspacing=0 width=200 class="noprint" style='border-collapse:collapse;table-layout:fixed;width:200pt'>
+        <h5>Combinational States</h5>
+        <col span=4 style='width:75pt'>
+         <tr height=32 style='height:24.0pt'>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn" id="state_button" onclick="draw_graph(this)" value="6s6p1/2" onmouseout="this.innerHTML='6s-6p1/2'">6s-6p1/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s6p3/2" onmouseout="this.innerHTML='6s-6p3/2'">6s-6p3/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s7p1/2" onmouseout="this.innerHTML='6s-7p1/2'">6s-7p1/2</button></td>
+          <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s&7p3/2" onmouseout="this.innerHTML='6s-7p3/2'">6s-7p3/2</button></td>
+         </tr>
+        </tbody>
+      </table>
+<br>
+      <h3 id="element" style="text-align: Center;margin: 20px;font-weight: bold;"> <I> </I></h3>   
+      <iframe align=center id='iframe' height="800" width="700" src='' onload='' scrolling="yes" style="border:none;"> </iframe>
+     
+
+</div>
+</div>
+</div>
+</body>
+
+</html>

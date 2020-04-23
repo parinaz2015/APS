@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Polarizability</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+navpol {
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: rgb(223, 222, 222);
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+navpol ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 800px; /* only for demonstration, should be removed */
+}
+
+aside {
+  float: left;
+  width: 25%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: rgb(255, 255, 255);
+  padding: 20px;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  navpol, article, doc {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<style id="Cs_10895_Styles">
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    .font510895
+        {color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;}
+    .xl1510895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:general;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl1529633 /* styling result data in the center of each cloumn*/
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6310895  
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        border:0pt solid windowtext;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6410895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    -->
+    </style>
+    <style>
+    .button {
+      background-color: rgba(0,123,255, 0.6);
+      border: none;
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight:700;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      margin: 1px 1px;
+      cursor: pointer;
+      width:150;
+      border-radius: 10px;
+      box-shadow: 0 2px #999;
+    }
+    .button:hover {background-color:  rgba(0,123,255, 0.8);}
+    .button:active {
+    background-color: #355a36;
+    box-shadow: 0 10px #666;
+    transform: translateY(4px);
+    }
+    .button:focus {
+    background-color:  rgba(0,123,255, 0.2);
+    }
+    </style>
+    <script>
+        function readfile() {
+          alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+        }
+    </script>
+    <script>
+         function draw_graph(id) {
+      // to show the selected Element name on top of the page
+      var element = document.querySelector("#element");
+      element.innerHTML = id.innerHTML; // + " <I>[Uncertainties are given in parenthesis]</I>";
+      // document.getElementById("iframe").src = "Li.txt"
+      switch (id.innerHTML) {
+        case "6s":
+          document.getElementById("iframe").src = "6s.html"
+          break;
+        case "6p1/2":
+          document.getElementById("iframe").src = "6p1.html"
+          break;
+        case "6p3/2":
+          document.getElementById("iframe").src = "6p3.html"
+          break;
+        case "7p1/2":
+          document.getElementById("iframe").src = "7p1.html"
+          break;
+        case "7p3/2":
+          document.getElementById("iframe").src = "7p3.html"
+          break;
+        case "6s-6p1/2":
+          document.getElementById("iframe").src = "Cs6p1.html"
+          break;
+        case "6s-6p3/2":
+          document.getElementById("iframe").src = "Cs6p3.html"
+          break;
+        case "6s-7p1/2":
+          document.getElementById("iframe").src = "Cs7p1.html"
+          break;
+        case "6s-7p3/2":
+          document.getElementById("iframe").src = "Cs7p3.html"
+          break;
+        }
+    }
+     
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+        <!-- Navbar content -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      </nav>
+    
+    
+    <!-- <div style="overflow-x:auto;">
+        <div id="Cs_10895" align=center >
+            <h1 style='color:black;font-family:Calibri;font-size:18.0pt;font-weight:800;
+            font-style:normal'>Dynamic polarizabilities </h1> -->
+
+
+<header>
+    
+    <h1>Dynamic polarizabilities  </h1>
+    <!-- <h3 id="element" style="text-align: Center;margin: 20px;font-weight: bold;"> <I> </I></h3>    -->
+</header>
+
+<section>
+  <navpol>
+    <ul>
+ 
+      <li><button class="button btn" id="state_button" onclick="draw_graph(this)" value=" 6s " onmouseout="this.innerHTML='6s'" style='width:46pt'>6s</button></li>
+      <li><button class="button btn" id="state_button" onclick="draw_graph(this)" value="6p1/2" onmouseout="this.innerHTML='6p1/2'">6p1/2</button></td></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6p3/2" onmouseout="this.innerHTML='6p3/2'">6p3/2</button></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="7p1/2" onmouseout="this.innerHTML='7p1/2'">7p1/2</button></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="7p3/2" onmouseout="this.innerHTML='7p3/2'">7p3/2</button></li>
+    </ul>
+    <br>
+    <br>
+    <h5><B><I>Combinational States</I></B></h5>
+    <ul>
+      <li><button class="button btn" id="state_button" onclick="draw_graph(this)" value="6s6p1/2" onmouseout="this.innerHTML='6s-6p1/2'">6s-6p1/2</button></td></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s6p3/2" onmouseout="this.innerHTML='6s-6p3/2'">6s-6p3/2</button></td></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s7p1/2" onmouseout="this.innerHTML='6s-7p1/2'">6s-7p1/2</button></td></li>
+      <li><button class="button btn " id="state_button" onclick="draw_graph(this)" value="6s&7p3/2" onmouseout="this.innerHTML='6s-7p3/2'">6s-7p3/2</button></td></li>
+    </ul>  
+</navpol>
+  
+  <article>
+    <div align=center style="overflow-x:auto;">
+    <h5>  Hint: Click on a transition to see the polarization graph.</h5>
+
+    <h3 id="element" style="text-align: Center;margin: 20px;font-weight: bold;"> <I> </I></h3>   
+    <iframe align=center id='iframe' height="800" width="700" src='' onload='' scrolling="yes" style="border:none;"> </iframe>
+    </div>
+  </article>
+
+  <aside>
+    <h3> Plot Tools</h3>
+    <br>
+    <div class="section" id="pantool">
+        <!-- <h4>Pan Tool<a class="headerlink" href="#pantool" title="Permalink to this headline">¶</a></h4> -->
+         
+        <a class="reference internal" href="images/Pan.png"><img alt="pan_icon" src="images/Pan.png" style="height: 14pt;"></a>
+        Tool name:<code class="docutils literal"><span class="pre">'pan' </span></code>
+        <p>The pan tool allows the user to pan the plot by left-dragging a mouse or dragging a
+        finger across the plot region.</p>
+        
+    </div>
+    <hr>
+    <div class="section" id="boxzoomtool">
+        <!-- <h4>BoxZoomTool<a class="headerlink" href="#boxzoomtool" title="Permalink to this headline">¶</a></h4> -->
+        <!-- Tool name: <code class="docutils literal"><span class="pre">'box_zoom'</span></code> -->
+        <a class="reference internal" href="images/BoxZoom.png"><img alt="box_zoom_icon" src="images/BoxZoom.png" style="height: 14pt;"></a>
+        Tool name: <code class="docutils literal"><span class="pre">'box_zoom'</span></code>
+        <p>The box zoom tool allows the user to define a rectangular region to zoom the
+        plot bounds too, by left-dragging a mouse, or dragging a finger across the
+        plot area.</p>
+    </div>
+    <hr>
+    <div class="section" id="wheelzoomtool">
+        <!-- <h4>WheelZoomTool<a class="headerlink" href="#wheelzoomtool" title="Permalink to this headline">¶</a></h4> -->
+        <a class="reference internal" href="images/WheelZoom.png"><img alt="wheel_zoom_icon" src="images/WheelZoom.png" style="height: 14pt;"></a>
+        Tool name: <code class="docutils literal"><span class="pre">'wheel_zoom'</span></code>
+        <p>The wheel zoom tool will zoom the plot in and out, centered on the current
+        mouse location. </p> 
+    </div>
+    <hr>
+    <div class="section" id="hovertool">
+                <!-- <h4>HoverTool<a class="headerlink" href="#hovertool" title="Permalink to this headline">¶</a></h4> -->
+                <a class="reference internal" href="images/hover.png"><img alt="save_icon" src="images/hover.png" style="height: 14pt;"></a>
+
+                Tool name: <code class="docutils literal"><span class="pre">'hover'</span></code>
+    
+                <p>The hover tool pops up a tooltip div whenever the cursor is over a glyph.
+                </p>
+    </div>
+    <hr>
+    <div class="section" id="crosshairtool">
+                    <!-- <h4>CrosshairTool<a class="headerlink" href="#crosshairtool" title="Permalink to this headline">¶</a></h4> -->
+                    <a class="reference internal" href="images/crosshair.png"><img alt="save_icon" src="images/crosshair.png" style="height: 14pt;"></a>
+
+                    Tool name: <code class="docutils literal"><span class="pre">'crosshair'</span></code>
+                    
+                    <p>The crosshair tool draws a crosshair annotation over the plot, centered on
+                    the current mouse position. </p>
+    </div>
+    <hr>
+    <div class="section" id="previewsavetool">
+                        <!-- <h4>SaveTool<a class="headerlink" href="#previewsavetool" title="Permalink to this headline">¶</a></h4> -->
+                        <a class="reference internal" href="images/Save.png"><img alt="save_icon" src="images/Save.png" style="height: 14pt;"></a>
+                        Tool name: <code class="docutils literal"><span class="pre">'save'</span></code>
+                        
+                       
+                        <p>The save tool allows the user to save a PNG image
+                        of the plot.</p>
+    </div>
+        
+  </aside>
+</section>
+
+
+
+<!-- <footer>
+  <p>Footer</p>
+</footer> -->
+
+</body>
+</html>

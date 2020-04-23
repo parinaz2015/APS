@@ -1,0 +1,1529 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<!--Export Data-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="theme.css">
+<!-- <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569818907/jquery.table2excel.min.js"></script>
+
+<!--Export Data-->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+<!-- <link rel=File-List href="CsPossibleStates_files/filelist.xml">-->
+<!--<link rel=File-List href="Cs%20Table_files/filelist.xml">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />-->
+<!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" /> -->
+<!--<link rel="stylesheet" href="https://cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css" /> -->
+<!--<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" /> -->
+<!--Export Data-->
+<!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">-->
+<!-- <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+<!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>-->
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>-->
+<!-- <script src="jquery-111.2.js"></script>  -->
+<!--<script type="text/javascript" src="js/jquery.table2excel.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.dataTables.min.js"> </script>-->
+<!--<script type="text/javascript" src="js/dataTables.bootstrap.js"> </script>-->
+<!-- <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569818907/jquery.table2excel.min.js"></script>-->
+<!-- <script src="/tableExport.jquery.plugin-master/tableExport.min.js"></script> -->
+<!-- <script src="/tableExport.jquery.plugin-master/tableExport.js"></script>-->
+<!-- <script src="/tableExport.jquery.plugin-master/package.json"></script> -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+<!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>  -->
+<!-- <script src="https://cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>   -->
+<!-- <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script> -->
+<!-- <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script> -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> -->
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script> 
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script> 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  -->
+<style type="text/css">
+    <!--
+    
+    @media print
+    {
+    .noprint {display:none;}
+    }
+    
+    @media screen
+    {
+    ...
+    }
+    
+    -->
+</style>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<style id="Cs_23811_Styles"><!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl6323811
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:500;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+--></style>
+<style id="Cs_10895_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font510895
+	{color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.xl1510895
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+    white-space:nowrap;}
+.xl1529633 /* styling result data in the center of each cloumn*/
+    {padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	text-align:center;
+	vertical-align:center;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6310895  
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:center;
+	border:0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6410895
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:16.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:center;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+<style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight:700;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      margin: 1px 1px;
+      cursor: pointer;
+      width:80;
+      border-radius: 10px;
+      box-shadow: 0 2px #999;
+    }
+    .button:hover {background-color: #3e8e41}
+    .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+    .button-clicked {
+    background-color: rgb(50, 92, 79)
+    }
+    </style>
+    <script>
+    function goBack() {
+        window.location.href = "index.htm";
+    }
+    function printPage() {
+    window.print();
+    }
+    </script>
+<title>Transitions</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+    <!-- Navbar content -->
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </nav>
+
+<div class="content">
+<!-- <div  align=center >
+<button onclick="goBack()" class="noprint">Back to Elements page</button>
+</div>-->
+
+<div id="Cs_10895" align=center x:publishsource="Excel">
+<h2 style='color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal'>Master States </h2>
+<div style="overflow-x:auto;">
+<table border=0 cellpadding=0 cellspacing=0 width=320 class="noprint" style='border-collapse:
+ collapse;table-layout:fixed;width:250pt'>
+ <col width=200 span=5 style='width:67pt'>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=center width=67 border:.5pt solid #FFFFFF; style='height:24.0pt;
+  width:67pt'><button class="button " id="state_button" onclick="search_table()" value="6s1/2">6s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button " id="state_button" onclick="search_table()" value="6p1/2">6p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="search_table()" value="6p3/2">6p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="search_table()" value="5d3/2">5d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left width=64 style='border-left:none;width:48pt'><button class="button btn " id="state_button" onclick="search_table()" value="5d5/2">5d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:none'><button class="button" id="state_button" onclick="search_table()" value="7s1/2">7s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="7p1/2">7p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="7p3/2">7p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="6d3/2">6d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="6d5/2">6d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:
+  none'><button class="button" id="state_button" onclick="search_table()" value="8s1/2">8s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="8p1/2">8p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="8p3/2">8p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="7d3/2">7d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="7d5/2">7d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:
+  none'><button class="button" id="state_button" onclick="search_table()" value="9s1/2">9s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="9p1/2">9p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="9p3/2">9p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="8d3/2">8d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="8d5/2">8d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:
+  none'><button class="button" id="state_button" onclick="search_table()" value="10s1/2">10s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="10p1/2">10p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="10p3/2">10p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="9d3/2">9d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="9d5/2">9d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:
+  none'><button class="button" id="state_button" onclick="search_table()" value="11s1/2">11s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="11p1/2">11p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="11p3/2">11p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="10d3/2">10d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="10d5/2">10d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6310895 align=left style='height:24.0pt;border-top:
+  none'><button class="button" id="state_button" onclick="search_table()" value="12s1/2">12s<font class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="12p1/2">12p<font
+  class="font510895"><sub>1/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="12p3/2">12p<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="11d3/2">11d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="11d5/2">11d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6410895 style='height:24.0pt'></td>
+  <td class=xl6410895></td>
+  <td class=xl6310895 align=left style='border-top:none'><button class="button" id="state_button" onclick="search_table()" value="">All</button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="12d3/2">12d<font
+  class="font510895"><sub>3/2</sub></font></button></td>
+  <td class=xl6310895 align=left style='border-top:none;border-left:none'><button class="button" id="state_button" onclick="search_table()" value="12d5/2">12d<font
+  class="font510895"><sub>5/2</sub></font></button></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+
+</div>
+
+<div id="Cs_23811" align=center x:publishsource="Excel">
+<br>
+<h1 id="transitionType" style='color:black;font-family:Calibri;font-size:14.0pt;font-weight:800; 
+font-style:normal'>CS Transitions</h1>
+<P align=center id="demo"> </P>
+
+<!-- <button type="button" class="btn btn-sm btn-outline-secondary" onclick="share()">Share</button> -->
+<!-- <button type="button" class="btn btn-sm btn-outline-secondary" onclick="export()">Export</button> -->
+<div class="container">
+<div class="export btn-group">
+    <button type="button" class="btn noprint" onclick="printPage()"> Print Transitions </button>
+    <button class="excel btn btn-secondary " aria-label="Export"  type="button" title="Export data" id="exporttable"> Excel </button>
+  
+</div>
+</div>
+
+
+
+   
+
+<p> </p>
+<!-- to make the table responsive -->
+<div style="overflow-x:auto;">
+<table class="table" id="htmltable" border=0 cellpadding=0 cellspacing=0 width=360 style='border-collapse:
+ collapse;table-layout:fixed;width:270pt'>
+ <col class=xl6323811 width=100 span=3 style='mso-width-source:userset;
+ mso-width-alt:3364;width:89pt'>
+ <col class=xl6323811 width=90 style='mso-width-source:userset;mso-width-alt:
+ 3072;width:63pt'>
+ <thead>
+ <tr height=26 style='height:19.5pt'>
+  <th height=26 class=xl6323811 width=92 style='height:19.5pt;width:69pt;
+  font-size:11.0pt;color:rgb(0, 0, 0);font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47;
+  background:#70AD47;mso-pattern:#70AD47 none'>From State</th>
+  <th class=xl6323811 width=92 style='width:69pt;font-size:11.0pt;color:rgb(0, 0, 0);
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:.5pt;border-bottom:.5pt solid #70AD47;border-left:none;background:#70AD47;
+  mso-pattern:#70AD47 none'>To State</th>
+  <th class=xl6323811 width=92 style='width:69pt;font-size:11.0pt;color:rgb(0, 0, 0);
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:none;background:#70AD47;
+  mso-pattern:#70AD47 none'>Value</th>
+  <th class=xl6323811 width=92 style='width:80pt;font-size:11.0pt;color:rgb(0, 0, 0);
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:.5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:.5pt;
+  background:#70AD47;mso-pattern:#70AD47 none'>Uncertainity</th>
+ </tr>
+ </thead>
+ <tbody id="cs_table">
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>4.5036</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0144</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.2757</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0022</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0907</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0094</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0423</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0062</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0243</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0045</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0159</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0036</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0113</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.003</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl6323811 style='height:24.0pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6.3349</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0095</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.586</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0047</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.2319</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0143</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.1297</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0096</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.086</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0071</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0627</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0056</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>6<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.0486</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0046</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10.308</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0103</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9.3125</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0233</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.9591</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0178</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.9991</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0095</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.6504</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0062</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.4742</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0046</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>5<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.2847</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.4439</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>17.9885</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.045</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6.5517</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.2214</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>3.1655</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0601</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.0071</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0291</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.44</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0176</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.1081</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0119</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.8984</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0505</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>14.32</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0143</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>14.0659</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0675</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.7273</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0278</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.3707</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0151</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.8873</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.01</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>s</b><sub>1/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.645</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0073</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>5<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.9147</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.1932</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8.0739</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.021</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl6323811 style='height:20.25pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>3.315</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.1057</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.5333</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0255</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.9564</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0113</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.6804</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0065</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.5209</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0053</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>d</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>0.4218</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0187</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>5<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.8098</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.4841</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>6<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>24.3535</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0584</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>7<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9.6417</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.2941</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>8<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>4.5164</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0736</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>9<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.83</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0337</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>10<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>2.018</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0194</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>11<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.5473</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.0127</td>
+ </tr>
+ <tr height=26 style='height:19.5pt'>
+  <td height=26 class=xl6323811 style='height:19.5pt;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;
+  border-right:none;border-bottom:.5pt solid #70AD47;border-left:.5pt solid #70AD47'>7<b>p</b><sub>3/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>12<b>d</b><sub>5/2</sub></td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  none;border-bottom:.5pt solid #70AD47;border-left:none'>1.2546</td>
+  <td class=xl6323811 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #70AD47;border-right:
+  .5pt solid #70AD47;border-bottom:.5pt solid #70AD47;border-left:none'>0.066</td>
+ </tr>
+
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=92 style='width:69pt'></td>
+  <td width=92 style='width:69pt'></td>
+  <td width=92 style='width:69pt'></td>
+  <td width=84 style='width:63pt'></td>
+ </tr>
+ <![endif]>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!--  <script type="text/javascript" src="libs/FileSaver/FileSaver.min.js"></script>-->
+<!-- <script type="text/javascript" src="libs/js-xlsx/xlsx.core.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/jsPDF/jspdf.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>-->
+<!--<script type="text/javascript" src="tableExport.min.js"></script>-->
+
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+            <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>-->
+                <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+                    <!--<script>$.browser = {}</script>
+                        <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+                            <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/1.3/jquery.ba-hashchange.min.js"></script>-->
+                                <!--<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>-->
+<!--<script src="assets/js/docs.min.js"></script>-->
+<!--<script src="assets/js/index.js?v=118"></script> -->
+<!--/* graph in my onedrive */-->
+<div align="center">
+<!-- <iframe width="900" height="618" frameborder="0" scrolling="yes" src="https://onedrive.live.com/embed?resid=7E27AF7E1F8782CF%214693&authkey=%21AGCXI5hYGom9yAo&em=2&wdAllowInteractivity=True&Item=Chart%203&wdDownloadButton=True&wdInConfigurator=True"></iframe> -->
+</div> 
+
+</body>
+</html>
+<script>
+$(document).ready(function(){  
+  
+    /* export Excel button */
+  $(".excel").click(function(){  
+    /* var table = $("#secondTable");  */
+    if ($('#secondTable').length)
+    {
+      var table = $("#secondTable");
+    }
+    else
+    {
+      var table = $("#htmltable");
+    }
+    if(table && table.length){
+    $(table).table2excel({
+    exclude: ".noExl",
+    name: document.getElementById("demo").innerText,
+    filename:  document.getElementById("transitionType").innerText+ document.getElementById("demo").innerText+ new Date().toISOString().replace(/[\-\:\.]/g, "") + ".xls", 
+    fileext: ".xls",
+    exclude_img: true,
+    exclude_links: true,
+    exclude_inputs: true,
+    preserveColors: false
+    });
+    }
+    });
+/* create a table to save data */
+  function makeTable(container, data) {
+    var table = $("<table/>").addClass('CSSTableGenerator');
+    $.each(data, function(rowIndex, r) {
+        var row = $("<tr/>");
+        $.each(r, function(colIndex, c) { 
+            row.append($("<t"+(rowIndex == 0 ?  "h" : "d")+"/>").text(c));
+        });
+        table.append(row);
+    });
+    return container.append(table);
+}
+/* append data to table */
+  function appendRow(table, rowData) {
+    var lastRow = $('<tr/>').appendTo(table.find('table:last'));
+    $.each(rowData, function(colIndex, c) { 
+        lastRow.append($('<td/>').text(c));
+    });
+    return lastRow;
+  }
+/* delete previous rows */
+   function deleteRows() {
+   $("#secondTable").empty();
+    
+  } 
+
+
+
+
+
+    $(".button").click(function(){ 
+        document.getElementById("demo").innerHTML = this.value;
+        search_table($(this).val());  
+    });
+/*  looking at the whole row-no specific column */
+    /* function search_table(value){  
+         $('#cs_table tr').each(function(){  
+              var found = 'false';  
+              $(this).each(function(){  
+                   if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                   {  
+                        found = 'true';  
+                   }  
+              });  
+              if(found == 'true')  
+              {  
+                   $(this).show();  
+              }  
+              else  
+              {  
+                   $(this).hide();  
+              }  
+         });  
+    }  */
+
+
+
+/*creating the table haeder and saving it in body section  */
+/* var data = [["From State", "To State", "value", "Uncertainity"]]; */
+                /* ["New York", "LA", "Seattle","xyz"]]; */
+    /* var Newtable = makeTable($(document.body),data); */
+    /* $(this).css( "id" , "secondTable"); */
+    /* var Newtable = makeTable($(document.body),data); */
+    /* $(".CSSTableGenerator").attr('id','secondTable'); */
+    /* appendRow(Newtable, ["Calgary", "Ottawa", "Yellowknife","XXXX"]); */
+     /* $("#secondTable").find("tr:gt(0)").remove();  */
+     /* $("#secondTable").empty(); */
+    /* deleteRows(); */
+    /* $("#secondTable").hide(); */
+
+
+
+    function search_table(value){  
+      
+              $("#secondTable").remove();
+              /* location.reload(true); */
+              var data = [["From State", "To State", "value", "Uncertainity"]];
+              var Newtable = makeTable($(document.body),data);
+              $(".CSSTableGenerator").attr('id','secondTable');
+              $("#secondTable").hide();
+         $('#cs_table tr').each(function(){  
+              var found = 'false'; 
+                  $(this).each(function(){  
+                  /* when the keyword is found in the first column */
+                   if($(this).find('td').eq(0).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                   {  
+                      found = 'true';  
+                   } 
+                    /*if the keyword is found in the second column then toggle column1 and column2 contents  */
+                   if($(this).find('td').eq(1).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                   /* .html() brings the whole format of the cell */
+                   {  var secondColumn = $(this).find('td').eq(1).html(); 
+                      var firstColumn = $(this).find('td').eq(0).html();
+                    /* contents toggled here */
+                      $(this).find('td').eq(0).html(secondColumn);
+                      $(this).find('td').eq(1).html(firstColumn);
+                      found = 'true';  
+                   }  
+              }); 
+               /*if the row contains this search keyword and it is in the first column then show it as it is. If it is in the second column then switch the two fileds together */
+               
+               if(found == 'true')   
+              {  
+                  $(this).show();  
+                  appendRow(Newtable, [$(this).find('td').eq(0).text(),$(this).find('td').eq(1).text(),$(this).find('td').eq(2).text(),$(this).find('td').eq(3).text()]);
+                  
+              }  
+              else  
+              {  
+                $(this).hide();  
+              }  
+         });   
+    }  
+ 
+    
+});  
+</script>  
+
+<!-- https://bbbootstrap.com/snippets/export-table-excel-file-52672898 -->
